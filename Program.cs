@@ -110,7 +110,7 @@ class TicTacToe
     /// <returns>A 1-based spot number (not a 0-based index)</returns>
     static int GetMoveChoice(string currentPlayer)
     {Console.Write($"{currentPlayer}'s turn to choose a square (1-9): ");
-            string move_string = Console.ReadLine();
+            string move_string = Console.ReadLine() ?? "";
 
             int choice = int.Parse(move_string);
             return choice;
